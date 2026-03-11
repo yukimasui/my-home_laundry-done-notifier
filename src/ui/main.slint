@@ -1,0 +1,73 @@
+import { Button, VerticalBox } from "std-widgets.slint";
+
+export component MainWindow inherits Window {
+    background: #1e1e2e;
+    VerticalLayout {
+        padding: 50px;
+        Text {
+            text: "洗濯機終了通知システム";
+            font-size: 48px;
+            color: white;
+        }
+
+        HorizontalLayout {
+            alignment: end;
+            Rectangle {
+                background: #e53935;
+                border-radius: 8px;
+                width: 300px;
+                height: 200px;
+
+                Text {
+                    text: "電源を切る";
+                    color: white;
+                    font-size: 24px;
+                }
+
+                TouchArea {
+                    clicked => {
+                        root.shutdown()
+                    }
+                }
+            }
+        }
+    }
+
+    popup := PopupWindow {
+        x: 300px;
+        y: 300px;
+        width: 800px;
+        height: 600px;
+
+        Rectangle {
+            background: white;
+            border-radius: 8px;
+
+            VerticalBox {
+                Text {
+                    text: "洗濯が終わりました！";
+                    font-size: 60px;
+                }
+
+                Rectangle {
+                    Text {
+                        text: "閉じる";
+                        font-size: 60px;
+                    }
+
+                    TouchArea {
+                        clicked => {
+                            popup.close()
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    callback shutdown();
+    callback show-popup();
+    show-popup => {
+        popup.show()
+    }
+}
