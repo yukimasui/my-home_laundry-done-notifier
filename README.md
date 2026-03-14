@@ -7,6 +7,10 @@
 洗濯機の圧電ブザー音をマイクで拾い、FFTによる周波数解析で終了を検知します。  
 検知結果はMQTTで配信され、Ubuntu Server上で動作するSlintベースのキオスク端末に通知が表示されます。
 
+### 動作中動画
+#### KIOSK端末起動〜終了
+[![動画のタイトル](https://img.youtube.com/vi/bz1PZbwjg_s/0.jpg)](https://www.youtube.com/watch?v=bz1PZbwjg_s)
+
 ## 開発のきっかけ
 生産技術の業務でIoTを活用した設備の見える化に関わっており、  
 市販ソフトウェアを使用してシステム構築を行っています。  
