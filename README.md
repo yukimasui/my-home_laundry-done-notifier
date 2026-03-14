@@ -11,6 +11,10 @@
 #### KIOSK端末起動〜終了
 [![動画のタイトル](https://img.youtube.com/vi/bz1PZbwjg_s/0.jpg)](https://www.youtube.com/watch?v=bz1PZbwjg_s)
 
+#### 動画による洗濯終了通知〜お知らせ
+[![動画のタイトル](https://img.youtube.com/vi/qi6494W5sZU/0.jpg)](https://www.youtube.com/watch?v=qi6494W5sZU)
+qi6494W5sZU
+
 ## 開発のきっかけ
 生産技術の業務でIoTを活用した設備の見える化に関わっており、  
 市販ソフトウェアを使用してシステム構築を行っています。  
